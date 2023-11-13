@@ -1,0 +1,211 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module LocalImage {
+  internal  {
+    frame = "805 557 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = LocalImage
+    name = $(DemoDataPath)/BrainMultiModal/ProbandT1.dcm
+    autoLoad = TRUE
+  }
+}
+module SubImage {
+  internal  {
+    frame = "751 442 88 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "168 152 438 577"
+        sizeHint = "438 577"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SubImage
+    boxInput = "0 0 0 0 0 0 -1 -1 -1 -1 -1 -1"
+    autoApplyBox = FALSE
+    correctForNegativeSubImageExtents = TRUE
+    enableBoxClamping = FALSE
+    x = 28.8555183410645
+    sx = 37.5584564208984
+    modifyX = TRUE
+    y = -100.713272094727
+    sy = 50.0802459716797
+    modifyY = TRUE
+    z = 103.300765991211
+    sz = -31.6612091064453
+    modifyZ = TRUE
+    c = 0
+    sc = 1
+    modifyC = FALSE
+    t = 0
+    st = 1
+    modifyT = TRUE
+    u = 0
+    su = 1
+    modifyU = FALSE
+    fillValue = 0
+    mode = WorldStartEndImageAxisAligned
+    autoApply = TRUE
+  }
+}
+module SynchroView2D {
+  internal  {
+    frame = "817 327 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "173 293 804 400"
+        sizeHint = "804 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SynchroView2D
+    leftInventorInputOn = FALSE
+    rightInventorInputOn = FALSE
+    synchSlicing = TRUE
+    synchZooming = TRUE
+    synchTiming = TRUE
+    synchLUTs = FALSE
+    disconnectOnHide = TRUE
+    snapToCenter1 = FALSE
+    snapToCenter2 = FALSE
+    slice1 = 23
+    timepoint1 = 0
+    filterMode = FILTER_LINEAR
+    slice2 = 0
+    timepoint2 = 0
+    lut1w = 932.865600585938
+    lut1c = 439.962493896484
+    lut2w = 932.865600585938
+    lut2c = 439.962493896484
+    annotationColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    borderOn = FALSE
+    drawCurrentPos = FALSE
+    showCurrentPos = FALSE
+    worldPosition = "37.5584564208984 50.0802459716797 -31.6612091064453"
+    background = "0 0 0"
+  }
+}
+module SoView2DRectangle {
+  internal  {
+    frame = "858 442 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "977 236 471 458"
+        sizeHint = "471 458"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DRectangle
+    interactionProviderID = ""
+    drawingOn = TRUE
+    editingOn = TRUE
+    fixZOn = FALSE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = CROSS_CURSOR
+    startWorldPos = "28.8555183410645 -100.713272094727 103.300765991211"
+    endWorldPos = "37.5584564208984 50.0802459716797 -31.6612091064453"
+    blendInside = 0.2
+    blendOnto = 0.5
+    blendOutside = 0
+    lineBlendInside = 0.5
+    lineBlendOnto = 0.69999999
+    lineBlendOutside = 0
+    resetToImage = FALSE
+    selectOutside = FALSE
+    allowDrag = FALSE
+    cooperative = FALSE
+    shadeExterior = 0
+    shadeAllExterior = FALSE
+    lineStyle = SOLID
+    labelVerticalOffset = 0
+    labelVerticalPosition = Center
+    labelVerticalBoxPosition = Center
+    labelHorizontalOffset = 0
+    labelHorizontalBoxPosition = Center
+    labelHorizontalPosition = Center
+    drawLabel = FALSE
+    labelText = ""
+    labelFontSize = 12
+    labelColor = "1 1 1"
+    labelShadow = TRUE
+  }
+}
+module DecomposeVector3 {
+  internal  {
+    frame = "890 212 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "267 790 343 68"
+        sizeHint = "343 68"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DecomposeVector3
+    v = "28.8555183410645 -100.713272094727 103.300765991211"
+  }
+}
+module DecomposeVector3 {
+  internal  {
+    frame = "727 212 144 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "728 739 343 68"
+        sizeHint = "343 68"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DecomposeVector31
+    v = "37.5584564208984 50.0802459716797 -31.6612091064453"
+  }
+}
+connections  {
+  SubImage.input0 = LocalImage.outImage
+  SubImage.x = DecomposeVector3.x
+  SubImage.sx = DecomposeVector31.x
+  SubImage.y = DecomposeVector3.y
+  SubImage.sy = DecomposeVector31.y
+  SubImage.z = DecomposeVector3.z
+  SubImage.sz = DecomposeVector31.z
+  SynchroView2D.inImage1 = LocalImage.outImage
+  SynchroView2D.inImage2 = SubImage.output0
+  SynchroView2D.leftExtensions = SoView2DRectangle.self
+  DecomposeVector3.v = SoView2DRectangle.startWorldPos
+  DecomposeVector31.v = SoView2DRectangle.endWorldPos
+}
+networkModel = ""

@@ -1,0 +1,97 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module LocalImage {
+  internal  {
+    frame = "625 389 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = LocalImage
+    name = $(DemoDataPath)/BrainMultiModal/ProbandT1.dcm
+    autoLoad = TRUE
+  }
+}
+module LocalImage {
+  internal  {
+    frame = "945 389 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = LocalImage1
+    name = $(DemoDataPath)/BrainMultiModal/ProbandT1.dcm
+    autoLoad = TRUE
+  }
+}
+module SynchroView2D {
+  internal  {
+    frame = "757 133 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "-104 242 804 400"
+        sizeHint = "804 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SynchroView2D
+    leftInventorInputOn = FALSE
+    rightInventorInputOn = FALSE
+    synchSlicing = TRUE
+    synchZooming = TRUE
+    synchTiming = TRUE
+    synchLUTs = FALSE
+    disconnectOnHide = TRUE
+    snapToCenter1 = FALSE
+    snapToCenter2 = FALSE
+    slice1 = 34
+    timepoint1 = 0
+    filterMode = FILTER_LINEAR
+    slice2 = 34
+    timepoint2 = 0
+    lut1w = 932.865600585938
+    lut1c = 439.962493896484
+    lut2w = 932.865600585938
+    lut2c = 439.962493896484
+    annotationColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    borderOn = FALSE
+    drawCurrentPos = FALSE
+    showCurrentPos = FALSE
+    worldPosition = "13.4447555541992 33.6549987792969 21.9758682250977"
+    background = "0 0 0"
+  }
+}
+module Arithmetic2 {
+  internal  {
+    frame = "825 293 96 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "763 525 392 103"
+        sizeHint = "392 103"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Arithmetic2
+    function = Add
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    constant = 0
+    autoReplicate = FALSE
+  }
+}
+connections  {
+  SynchroView2D.inImage1 = LocalImage.outImage
+  SynchroView2D.inImage2 = Arithmetic2.output0
+  Arithmetic2.input0 = LocalImage.outImage
+  Arithmetic2.input1 = LocalImage1.outImage
+}
+networkModel = ""

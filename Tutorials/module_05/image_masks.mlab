@@ -1,0 +1,115 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module LocalImage {
+  internal  {
+    frame = "1081 541 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = LocalImage
+    name = $(DemoDataPath)/BrainMultiModal/ProbandT1.dcm
+    autoLoad = TRUE
+  }
+}
+module SynchroView2D {
+  internal  {
+    frame = "1101 157 120 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "161 256 804 400"
+        sizeHint = "804 400"
+        wasOpen = yes
+      }
+      window _automatic {
+        geometry = "78 244 500 600"
+        sizeHint = "260 227"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SynchroView2D
+    leftInventorInputOn = FALSE
+    rightInventorInputOn = FALSE
+    synchSlicing = TRUE
+    synchZooming = TRUE
+    synchTiming = TRUE
+    synchLUTs = TRUE
+    disconnectOnHide = TRUE
+    snapToCenter1 = FALSE
+    snapToCenter2 = FALSE
+    slice1 = 27
+    timepoint1 = 0
+    filterMode = FILTER_LINEAR
+    slice2 = 27
+    timepoint2 = 0
+    lut1w = 932.865600585938
+    lut1c = 439.962493896484
+    lut2w = 932.865600585938
+    lut2c = 439.962493896484
+    annotationColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    borderOn = FALSE
+    drawCurrentPos = FALSE
+    showCurrentPos = FALSE
+    worldPosition = "83.5801696777344 49.1727905273438 -31.9216766357422"
+    background = "0 0 0"
+  }
+}
+module Mask {
+  internal  {
+    frame = "1197 285 120 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "763 471 480 136"
+        sizeHint = "392 136"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Mask
+    mode = MaskedOriginal
+    outputImageSize = InvalidateOutputIfSizesDiffer
+    blending = 0.5
+    background = -1000
+  }
+}
+module Threshold {
+  internal  {
+    frame = "1205 421 88 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "825 364 303 351"
+        sizeHint = "268 351"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = Threshold
+    threshold = 60
+    relativeThreshold = FALSE
+    comparisonOperator = LessEqual
+    conditionTrueWriteValue = UserDef
+    userConditionTrueValue = 0
+    conditionFalseWriteValue = UserDef
+    userConditionFalseValue = 1
+  }
+}
+connections  {
+  SynchroView2D.inImage1 = LocalImage.outImage
+  SynchroView2D.inImage2 = Mask.output0
+  Mask.input0 = LocalImage.outImage
+  Mask.input1 = Threshold.output0
+  Threshold.input0 = LocalImage.outImage
+}
+networkModel = ""

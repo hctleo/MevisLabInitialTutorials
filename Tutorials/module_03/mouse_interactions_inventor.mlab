@@ -1,0 +1,154 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "845 365 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "1220 282 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = FALSE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "-1.82333016395569 5.26350212097168 -2.0052764415741"
+    orientation = "-0.840561628341675 0.342798173427582 0.419458538293839 2.26081514358521"
+    nearDistance = 4.4624062
+    farDistance = 7.3802423
+    focalDistance = 5.4266338
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
+  }
+}
+module SoCube {
+  internal  {
+    frame = "953 525 80 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "896 525 127 103"
+        sizeHint = "127 103"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCube
+    width = 1.4125022
+    height = 2
+    depth = 2
+  }
+}
+module SoMouseGrabber {
+  internal  {
+    frame = "753 517 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "184 176 481 551"
+        sizeHint = "481 551"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMouseGrabber
+    interactionProviderID = ""
+    on = TRUE
+    useManagedInteraction = FALSE
+    normalized = FALSE
+    clamp = TRUE
+    button1 = RELEASED
+    button2 = PRESSED
+    button3 = RELEASED
+    shift = RELEASED
+    ctrl = RELEASED
+    alt = RELEASED
+    cursorShape = UNDEFINED_CURSOR
+    xmin = 0
+    xmax = 5
+    ymin = 0
+    ymax = 1
+    setEventHandled = FALSE
+    setWheelEventHandled = FALSE
+    flipX = FALSE
+    flipY = FALSE
+    swapXY = FALSE
+    sensitivity = 1
+    wheelOverflow = FALSE
+    wheel = 0
+    wheelStep = 1
+    wheelMin = 0
+    wheelMax = 100
+  }
+}
+connections  {
+  SoExaminerViewer.children = "SoMouseGrabber.self SoCube.self"
+  SoCube.width = SoMouseGrabber.x
+}
+networkModel = ""

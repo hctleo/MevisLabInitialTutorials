@@ -1,0 +1,298 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module SoCone {
+  internal  {
+    frame = "509 545 80 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoCone
+    parts = ALL
+    bottomRadius = 1
+    height = 2
+    sides = 0
+    sections = 0
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "715 315 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "128 260 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "5.41944313049316 1.22016072273254 -17.0398216247559"
+    orientation = "-0.0544173009693623 0.997089862823486 0.0533906407654285 3.04076957702637"
+    nearDistance = 15.537592
+    farDistance = 18.529989
+    focalDistance = 16.120825
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "394 545 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _materialeditor {
+        geometry = "848 486 222 180"
+        sizeHint = "222 180"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial
+    ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
+    diffuseColor = "0.0705880001187325 0.800000011920929 0.0705880001187325"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.680999994277954
+    transparency = 0
+  }
+}
+module SoTransform {
+  internal  {
+    frame = "271 545 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "720 492 479 169"
+        sizeHint = "479 169"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoTransform
+    translation = "2 0 0"
+    rotation = "0 0 1 0"
+    scaleFactor = "1 1 1"
+    scaleOrientation = "0 0 1 0"
+    center = "0 0 0"
+  }
+}
+module SoSeparator {
+  internal  {
+    frame = "572 430 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "267 301 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoSeparator
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "719 430 128 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup
+  }
+}
+module SoSphere {
+  internal  {
+    frame = "1199 545 96 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoSphere1
+    radius = 1
+    subdivision = 0
+  }
+}
+module SoCube {
+  internal  {
+    frame = "854 545 80 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoCube
+    width = 2
+    height = 2
+    depth = 2
+  }
+}
+module SoTransform {
+  internal  {
+    frame = "608 545 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "720 492 479 169"
+        sizeHint = "479 169"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoTransform1
+    translation = "4 0 0"
+    rotation = "0 0 1 0"
+    scaleFactor = "1 1 1"
+    scaleOrientation = "0 0 1 0"
+    center = "0 0 0"
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "739 545 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _materialeditor {
+        geometry = "848 486 222 180"
+        sizeHint = "222 180"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial1
+    ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
+    diffuseColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.200000002980232
+    transparency = 0
+  }
+}
+module SoTransform {
+  internal  {
+    frame = "1068 545 112 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "720 492 479 169"
+        sizeHint = "479 169"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoTransform2
+    translation = "4 0 0"
+    rotation = "0 0 1 0"
+    scaleFactor = "1 1 1"
+    scaleOrientation = "0 0 1 0"
+    center = "0 0 0"
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "866 430 128 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup1
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "953 545 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _materialeditor {
+        geometry = "848 486 222 180"
+        sizeHint = "222 180"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial2
+    ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
+    diffuseColor = "0.800000011920929 0.760783970355988 0.19607800245285"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.200000002980232
+    transparency = 0
+  }
+}
+connections  {
+  SoExaminerViewer.children = "SoSeparator.self SoGroup.self SoGroup1.self"
+  SoSeparator.children = "SoTransform.self SoMaterial.self SoCone.self"
+  SoGroup.children = "SoTransform1.self SoMaterial1.self SoCube.self"
+  SoGroup1.children = "SoMaterial2.self SoTransform2.self SoSphere1.self"
+}
+networkModel = ""

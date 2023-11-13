@@ -1,0 +1,50 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module LocalImage {
+  internal  {
+    frame = "265 301 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = LocalImage
+    name = $(DemoDataPath)/BrainMultiModal/ProbandT1.dcm
+    autoLoad = TRUE
+  }
+}
+module DicomTagViewer {
+  internal  {
+    frame = "265 165 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "235 287 476 463"
+        sizeHint = "476 419"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = DicomTagViewer
+    tagName0 = WindowCenter
+    tagName1 = ""
+    tagName2 = ""
+    tagName3 = ""
+    tagName4 = ""
+    tagName5 = ""
+    tagName6 = ""
+    tagName7 = ""
+    tagName8 = ""
+    maxValueLen = 80
+    showPrivateTags = FALSE
+    tagListSubset = AllTags
+    trimSpaces = FALSE
+  }
+}
+connections  {
+  DicomTagViewer.input0 = LocalImage.outImage
+}
+networkModel = ""

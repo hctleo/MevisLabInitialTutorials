@@ -1,0 +1,251 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module SoMaterial {
+  internal  {
+    frame = "609 461 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _materialeditor {
+        geometry = "339 511 222 180"
+        sizeHint = "222 180"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial
+    ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
+    diffuseColor = "0.549019634723663 0.686274528503418 0.411764711141586"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.200000002980232
+    transparency = 0
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "701 349 136 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "290 249 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = FALSE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "-2.02969694137573 -2.71073317527771 -3.00292325019836"
+    orientation = "0.112149387598038 -0.944193005561829 0.30971297621727 2.56801724433899"
+    nearDistance = 2.5884197
+    farDistance = 6.467586
+    focalDistance = 4.5260668
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
+  }
+}
+module SoCube {
+  internal  {
+    frame = "857 461 80 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoCube
+    width = 3
+    height = 2
+    depth = 2
+  }
+}
+module SoBackground {
+  internal  {
+    frame = "721 461 112 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoBackground
+    rotate = TRUE
+    flip = FALSE
+    on = TRUE
+    depthBuffer = TRUE
+  }
+}
+module TimeCounter {
+  internal  {
+    frame = "805 229 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "225 295 148 225"
+        sizeHint = "148 225"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = TimeCounter
+    min = 3
+    max = 5
+    step = 1
+    frequency = 0.5
+    on = TRUE
+    value = 5
+  }
+}
+module RunPythonScript {
+  internal  {
+    frame = "537 221 160 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "771 64 917 1016"
+        sizeHint = "701 819"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = RunPythonScript
+    in0 = 5
+    in1 = ""
+    in2 = ""
+    in3 = ""
+    in4 = ""
+    in5 = ""
+    in6 = ""
+    in7 = ""
+    in8 = ""
+    in9 = ""
+    inComment0 = TimeCounter
+    inComment1 = in1
+    inComment2 = in2
+    inComment3 = in3
+    inComment4 = in4
+    inComment5 = in5
+    inComment6 = in6
+    inComment7 = in7
+    inComment8 = in8
+    inComment9 = in9
+    autoApply0 = TRUE
+    autoApply1 = TRUE
+    autoApply2 = TRUE
+    autoApply3 = TRUE
+    autoApply4 = TRUE
+    autoApply5 = TRUE
+    autoApply6 = TRUE
+    autoApply7 = TRUE
+    autoApply8 = TRUE
+    autoApply9 = TRUE
+    out0 = "0.5490196078431373 0.6862745098039216 0.4117647058823529"
+    out1 = ""
+    out2 = ""
+    out3 = ""
+    out4 = ""
+    out5 = ""
+    out6 = ""
+    out7 = ""
+    out8 = ""
+    out9 = ""
+    outComment0 = DiffuseColor
+    outComment1 = out1
+    outComment2 = out2
+    outComment3 = out3
+    outComment4 = out4
+    outComment5 = out5
+    outComment6 = out6
+    outComment7 = out7
+    outComment8 = out8
+    outComment9 = out9
+    initCode = "# For backward compatibility, set up CTX as alias for ctx
+CTX = ctx # ctx is the network's context, not RunPythonScript's"
+    wakeUpCode = ""
+    code = "*import random
+
+red = TimeCounter * random.randrange(0,52) / 255
+green = TimeCounter * random.randrange(0,52) / 255
+blue = TimeCounter * random.randrange(0,52) / 255
+
+updateOutputValue("DiffuseColor", str(red) + " " + str
+(green) + " " + str(blue))
+
+print(ctx.field("SoCube.height").value)
+
+ctx.field("SoCube.width").value = 3*"
+    finalizeCode = ""
+    showFields = TRUE
+    showInitCode = FALSE
+    showWakeUpCode = FALSE
+    showCode = TRUE
+    showFinalizeCode = FALSE
+    showConsole = FALSE
+  }
+}
+connections  {
+  SoMaterial.diffuseColor = RunPythonScript.out0
+  SoExaminerViewer.children = "SoMaterial.self SoBackground.self SoCube.self"
+  RunPythonScript.in0 = TimeCounter.value
+}
+networkModel = ""
