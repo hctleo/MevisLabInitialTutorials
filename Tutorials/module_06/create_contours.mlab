@@ -17,7 +17,7 @@ module LocalImage {
 }
 module CSOManager {
   internal  {
-    frame = "929 389 144 72"
+    frame = "905 381 144 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
@@ -95,8 +95,8 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 4
-    numRedos = 5
+    numUndos = 7
+    numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
     useSelectionGroupNotification = FALSE
@@ -121,8 +121,8 @@ module CSOManager {
     selectionTabSelected = FALSE
     notificationTabSelected = FALSE
     defaultTabSelected = FALSE
-    csoCommonTabSelected = TRUE
-    csoVisualsTabSelected = FALSE
+    csoCommonTabSelected = FALSE
+    csoVisualsTabSelected = TRUE
     groupCommonTabSelected = FALSE
     groupVisualsTabSelected = FALSE
     groupMiscTabSelected = FALSE
