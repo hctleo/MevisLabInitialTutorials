@@ -1,0 +1,554 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module WEMInitialize {
+  internal  {
+    frame = "733 798 136 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "808 323 354 432"
+        sizeHint = "302 432"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMInitialize
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    initialPosition = "0 0 0"
+    initialDeformation = "1 1 1"
+    initModel = Octasphere
+    sphereSubdivisionLevel = 4
+    mirrorFaces = FALSE
+    generateEdges = TRUE
+    triangulate = FALSE
+    triangulationMode = "Center node"
+    generatePrimitiveValueLists = FALSE
+  }
+}
+module WEMInitialize {
+  internal  {
+    frame = "814 667 144 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "808 323 354 432"
+        sizeHint = "302 432"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMInitialize1
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    initialPosition = "0 0 0"
+    initialDeformation = "0.5 3 3"
+    initModel = Cube
+    sphereSubdivisionLevel = 4
+    mirrorFaces = FALSE
+    generateEdges = TRUE
+    triangulate = FALSE
+    triangulationMode = "Center node"
+    generatePrimitiveValueLists = FALSE
+  }
+}
+module SoWEMRenderer {
+  internal  {
+    frame = "607 274 160 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "712 310 494 533"
+        sizeHint = "494 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoWEMRenderer
+    interactionProviderID = ""
+    autoApply = TRUE
+    autoUpdate = TRUE
+    autoClear = TRUE
+    enableCreaseAngle = FALSE
+    creaseAngle = 75
+    useHighlightSelected = FALSE
+    highlightColor = "1 0 0"
+    highlightIntensity = 0.5
+    faceRenderingMode = WEM_FACE_RENDERING_MODE_AUTO
+    allowHits = FALSE
+    performPreHitTest = FALSE
+    cursorShape = CROSS_CURSOR
+    colorMode = WEM_COLOR_LUT_VALUES
+    drawFaces = TRUE
+    faceDiffuseColor = "0.792156994342804 0.792156994342804 0.792156994342804"
+    useFaceAmbientColor = TRUE
+    faceAmbientColor = "0.266667008399963 0.266667008399963 0.266667008399963"
+    useFaceSpecularColor = TRUE
+    faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
+    faceAlphaValue = 1
+    faceShininessValue = 1
+    primitiveValueLists = "LUT,LUT Perpendicular,LUT Tangential"
+    selectedPrimitiveValueList = LUT
+    selectedPrimitiveValueAlphaList = LUT
+    primitiveValueListValid = TRUE
+    primitiveValueListAlphaValid = TRUE
+    overwriteAlphaWithPVL = FALSE
+    wemPatchToRender = -1
+    maxWEMPatchIndex = 0
+    cachePatches = FALSE
+    sendAdjacency = FALSE
+    hitModifierKey = AllModifiersMask
+    selectedTab = 0
+  }
+}
+module SoWEMRenderer {
+  internal  {
+    frame = "786 274 168 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = SoWEMRenderer1
+    interactionProviderID = ""
+    autoApply = TRUE
+    autoUpdate = TRUE
+    autoClear = TRUE
+    enableCreaseAngle = FALSE
+    creaseAngle = 75
+    useHighlightSelected = FALSE
+    highlightColor = "1 0 0"
+    highlightIntensity = 0.5
+    faceRenderingMode = WEM_FACE_RENDERING_MODE_AUTO
+    allowHits = FALSE
+    performPreHitTest = FALSE
+    cursorShape = CROSS_CURSOR
+    colorMode = WEM_COLOR_GENERAL
+    drawFaces = TRUE
+    faceDiffuseColor = "0.792156994342804 0.792156994342804 0.792156994342804"
+    useFaceAmbientColor = TRUE
+    faceAmbientColor = "0.266667008399963 0.266667008399963 0.266667008399963"
+    useFaceSpecularColor = TRUE
+    faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
+    faceAlphaValue = 1
+    faceShininessValue = 1
+    primitiveValueLists = LUT
+    selectedPrimitiveValueList = LUT
+    selectedPrimitiveValueAlphaList = LUT
+    primitiveValueListValid = TRUE
+    primitiveValueListAlphaValid = TRUE
+    overwriteAlphaWithPVL = FALSE
+    wemPatchToRender = -1
+    maxWEMPatchIndex = 0
+    cachePatches = FALSE
+    sendAdjacency = FALSE
+    hitModifierKey = AllModifiersMask
+    selectedTab = 0
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "802 143 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "-73 215 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = FALSE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "1.2314418554306 4.24110174179077 -9.59503746032715"
+    orientation = "-0.285178512334824 0.941301107406616 0.180625155568123 2.90765476226807"
+    nearDistance = 8.5536089
+    farDistance = 12.889541
+    focalDistance = 10.562581
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
+  }
+}
+module SoBackground {
+  internal  {
+    frame = "476 274 112 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoBackground
+    rotate = TRUE
+    flip = FALSE
+    on = TRUE
+    depthBuffer = TRUE
+  }
+}
+module WEMSubdivide {
+  internal  {
+    frame = "643 667 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "795 360 331 359"
+        sizeHint = "328 359"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMSubdivide
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    workDirectlyOnInputWEMs = FALSE
+    listenToFinishNotifications = TRUE
+    listenToRepaintNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    triangulationMode = Strip
+    subdivisionMode = "Adaptive Subdivision"
+    maxEdgeLength = 0.1
+    localSubdivision = FALSE
+    localSubdivisionPVL = LUT
+    localSubdivisionPVLThreshold = 1
+  }
+}
+module WEMSubdivide {
+  internal  {
+    frame = "798 536 152 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "795 360 331 359"
+        sizeHint = "328 359"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMSubdivide1
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    workDirectlyOnInputWEMs = FALSE
+    listenToFinishNotifications = TRUE
+    listenToRepaintNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    triangulationMode = Strip
+    subdivisionMode = "Adaptive Subdivision"
+    maxEdgeLength = 0.1
+    localSubdivision = FALSE
+    localSubdivisionPVL = LUT
+    localSubdivisionPVLThreshold = 1
+  }
+}
+module WEMSurfaceDistance {
+  internal  {
+    frame = "643 405 192 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = WEMSurfaceDistance
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    workDirectlyOnInputWEMs = FALSE
+    listenToFinishNotifications = TRUE
+    listenToRepaintNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    triangulationMode = Strip
+    relativeError = 0
+    numEntries = 200
+    shouldComputeSignedDistances = FALSE
+    addEdgesToNearestNodes = FALSE
+    shouldNormalizeDist = FALSE
+    useLUTPrimitiveValueList = TRUE
+    customPrimitiveValueList = "Surface Distance"
+  }
+}
+module WEMInfo {
+  internal  {
+    frame = "647 143 136 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "679 328 560 496"
+        sizeHint = "560 496"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMInfo
+    autoApply = TRUE
+    autoUpdate = TRUE
+    autoClear = TRUE
+    listenToFinishingNotifications = TRUE
+    listenToRepaintNotifications = FALSE
+    listenToSelectionChangedNotifications = TRUE
+    boundingBoxMode = "Axis Aligned"
+    selectedPrimitiveValueList = LUT
+    curveScaleFactor = 1
+    selectedTab = 0
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "854 405 104 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "682 344 554 465"
+        sizeHint = "554 465"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor
+    rangeMin = 0
+    rangeMax = 3
+    viewMin = 0
+    viewMax = 3
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ 0 1 0 0.215685993432999, 0.523992300033569 1 0.949019610881805 0, 1.12859880924225 0.160784319043159 1 0.0470588244497776, 3 0.062745101749897 1 0.00392156885936856 ]"
+    alphaPoints = "[ 0 1, 0.523992300033569 1, 1.12859880924225 1, 3 1 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 3
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    marginColor = "0.830999970436096 0.815999984741211 0.783999979496002"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module WEMModify {
+  internal  {
+    frame = "651 536 128 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "23 279 605 758"
+        sizeHint = "549 758"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMModify
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    workDirectlyOnInputWEMs = FALSE
+    listenToFinishNotifications = TRUE
+    listenToRepaintNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    triangulationMode = Strip
+    WEMs = ""
+    selectedWEMs = ""
+    modifyFieldsValid = TRUE
+    modifyAllPatches = TRUE
+    scale = "1 1 1"
+    translate = "-1.34522819519043 0 0"
+    globalCenter = TRUE
+    center = FALSE
+    rotation = "0 0 1 0"
+    legacySTRBehavior = FALSE
+    scaleAndRotateAroundCenter = TRUE
+    transformMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useTransformMatrix = FALSE
+    mirrorFaces = FALSE
+    sortFaces = FALSE
+    triangulateFaces = FALSE
+    closeBoundaries = FALSE
+    setNodeColor = FALSE
+    nodeColor = "1 1 1"
+    setNodeAlpha = FALSE
+    nodeAlpha = 1
+    nodeValueMode = None
+    nodeValue = 0
+    clampNodeMinValue = FALSE
+    minClampValue = 0
+    clampNodeMaxValue = FALSE
+    maxClampValue = 4095
+    mergeAllPatchesIntoSinglePatch = FALSE
+  }
+}
+module SyncVector {
+  internal  {
+    frame = "753 28 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "884 613 361 169"
+        sizeHint = "361 169"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SyncVector
+    vector1 = "-1.34522819519043 0 0 0"
+    vector2 = "-1.34522819519043 0 0 0"
+    epsilon = 9.9999997e-05
+    epsilonVec = "0.001 0.001 0.001 0.001"
+    mode = EpsilonScalar
+  }
+}
+module SoTranslate1Dragger {
+  internal  {
+    frame = "973 274 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "842 353 368 200"
+        sizeHint = "292 200"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoTranslate1Dragger
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    enable = TRUE
+    translation = "-1.34522819519043 0 0"
+  }
+}
+connections  {
+  SoWEMRenderer.inWEM = WEMSurfaceDistance.outWEM
+  SoWEMRenderer.inLUT = SoLUTEditor.outLUT
+  SoWEMRenderer1.inWEM = WEMSubdivide1.outWEM
+  SoExaminerViewer.children = "SoBackground.self SoWEMRenderer.self SoWEMRenderer1.self SoTranslate1Dragger.self"
+  WEMSubdivide.inWEM = WEMInitialize.outWEM
+  WEMSubdivide1.inWEM = WEMInitialize1.outWEM
+  WEMSurfaceDistance.inWEM = WEMModify.outWEM
+  WEMSurfaceDistance.inWEM2 = WEMSubdivide1.outWEM
+  WEMInfo.inWEM = WEMSurfaceDistance.outWEM
+  WEMModify.inWEM = WEMSubdivide.outWEM
+  WEMModify.translate = SyncVector.vector2
+  SyncVector.vector1 = SoTranslate1Dragger.translation
+  SoTranslate1Dragger.translation = WEMModify.translate
+}
+networkModel = ""

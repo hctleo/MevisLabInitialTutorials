@@ -1,0 +1,781 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module WEMInitialize {
+  internal  {
+    frame = "461 357 136 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "808 323 354 432"
+        sizeHint = "302 432"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMInitialize
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    initialPosition = "0 0 0"
+    initialDeformation = "1 1 1"
+    initModel = Octasphere
+    sphereSubdivisionLevel = 4
+    mirrorFaces = FALSE
+    generateEdges = TRUE
+    triangulate = FALSE
+    triangulationMode = "Center node"
+    generatePrimitiveValueLists = FALSE
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "905 -18 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "80 325 462 445"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "1.92845141887665 1.99399447441101 2.27759408950806"
+    orientation = "-0.661678552627563 0.743907511234283 0.0937185287475586 0.907867550849915"
+    nearDistance = 1.5449988
+    farDistance = 5.9028745
+    focalDistance = 3.4318521
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
+  }
+}
+module SoCoordinateSystem {
+  internal  {
+    frame = "1133 97 152 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "732 452 463 249"
+        sizeHint = "455 249"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCoordinateSystem
+    strideMode = AUTO
+    userStride = 10
+    endTickMode = ROUND_UP
+    axisColor = "1 1 1"
+    axisAlpha = 1
+    tickColor = "1 1 1"
+    tickAlpha = 1
+    numbersFontColor = "1 1 1"
+    numbersFontAlpha = 1
+    lettersFontColor = "1 1 1"
+    lettersFontAlpha = 1
+    useTextShadow = TRUE
+    textShadowColor = "0 0 0"
+    fontSize = 10
+    lettersFontSizeOffset = 2
+    arrowLengthFactor = 2
+    letterOffsetFactor = 2
+    useVoxelAlignedBoundingBox = FALSE
+    userScale = "1 1 1"
+    userTranslate = "0 0 0"
+    userTransformMode = NO_USER_TRANSFORM
+  }
+}
+module SoWEMRenderer {
+  internal  {
+    frame = "807 97 160 72"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "712 310 494 533"
+        sizeHint = "494 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoWEMRenderer
+    interactionProviderID = ""
+    autoApply = TRUE
+    autoUpdate = TRUE
+    autoClear = TRUE
+    enableCreaseAngle = FALSE
+    creaseAngle = 75
+    useHighlightSelected = FALSE
+    highlightColor = "1 0 0"
+    highlightIntensity = 0.5
+    faceRenderingMode = WEM_FACE_RENDERING_MODE_AUTO
+    allowHits = FALSE
+    performPreHitTest = FALSE
+    cursorShape = CROSS_CURSOR
+    colorMode = WEM_COLOR_GENERAL
+    drawFaces = TRUE
+    faceDiffuseColor = "0.792156994342804 0.792156994342804 0.792156994342804"
+    useFaceAmbientColor = TRUE
+    faceAmbientColor = "0.266667008399963 0.266667008399963 0.266667008399963"
+    useFaceSpecularColor = TRUE
+    faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
+    faceAlphaValue = 1
+    faceShininessValue = 1
+    primitiveValueLists = LUT
+    selectedPrimitiveValueList = LUT
+    selectedPrimitiveValueAlphaList = LUT
+    primitiveValueListValid = TRUE
+    primitiveValueListAlphaValid = TRUE
+    overwriteAlphaWithPVL = FALSE
+    wemPatchToRender = -1
+    maxWEMPatchIndex = 0
+    cachePatches = FALSE
+    sendAdjacency = FALSE
+    hitModifierKey = AllModifiersMask
+    selectedTab = 0
+  }
+}
+module SoMIDraggerContainer {
+  internal  {
+    frame = "673 302 160 56"
+    moduleGroupName = "X direction drag"
+    windows  {
+      window _default {
+        geometry = "160 534 479 169"
+        sizeHint = "479 169"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMIDraggerContainer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    translation = "-0.169554397463799 -0.301894962787628 -0.515342056751251"
+    rotation = "0 0 1 0"
+    scaleFactor = "1 1 1"
+    scaleOrientation = "0 0 1 0"
+    center = "0 0 0"
+  }
+}
+module SoMITranslate1Dragger {
+  internal  {
+    frame = "673 417 160 56"
+    moduleGroupName = "X direction drag"
+    windows  {
+      window _default {
+        geometry = "945 514 300 132"
+        sizeHint = "300 132"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMITranslate1Dragger
+    interactionProviderID = ""
+    enabled = TRUE
+    cursorShape = MOVE_ALL_CURSOR
+    direction = DIR_X
+  }
+}
+module SoBackground {
+  internal  {
+    frame = "676 97 112 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoBackground
+    rotate = TRUE
+    flip = FALSE
+    on = TRUE
+    depthBuffer = TRUE
+  }
+}
+module SoCube {
+  internal  {
+    frame = "786 647 80 56"
+    moduleGroupName = "X direction drag"
+    windows  {
+      window _default {
+        geometry = "896 525 127 103"
+        sizeHint = "127 103"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCube
+    width = 0
+    height = 2
+    depth = 2
+  }
+}
+module WEMModify {
+  internal  {
+    frame = "472 228 128 56"
+    moduleGroupName = ""
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "27 261 605 758"
+        sizeHint = "549 758"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMModify
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    workDirectlyOnInputWEMs = FALSE
+    listenToFinishNotifications = TRUE
+    listenToRepaintNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    triangulationMode = Strip
+    WEMs = ""
+    selectedWEMs = ""
+    modifyFieldsValid = TRUE
+    modifyAllPatches = TRUE
+    scale = "1 1 1"
+    translate = "-0.169554397463799 -0.301894962787628 -0.515342056751251"
+    globalCenter = TRUE
+    center = FALSE
+    rotation = "0 0 1 0"
+    legacySTRBehavior = FALSE
+    scaleAndRotateAroundCenter = TRUE
+    transformMatrix = "1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1"
+    useTransformMatrix = FALSE
+    mirrorFaces = FALSE
+    sortFaces = FALSE
+    triangulateFaces = FALSE
+    closeBoundaries = FALSE
+    setNodeColor = FALSE
+    nodeColor = "1 1 1"
+    setNodeAlpha = FALSE
+    nodeAlpha = 1
+    nodeValueMode = None
+    nodeValue = 0
+    clampNodeMinValue = FALSE
+    minClampValue = 0
+    clampNodeMaxValue = FALSE
+    maxClampValue = 4095
+    mergeAllPatchesIntoSinglePatch = FALSE
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "705 532 96 56"
+    moduleGroupName = "X direction drag"
+  }
+  fields  {
+    instanceName = SoGroup
+  }
+}
+module SoSwitch {
+  internal  {
+    frame = "639 647 128 72"
+    moduleGroupName = "X direction drag"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "974 709 188 98"
+        sizeHint = "188 98"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoSwitch
+    whichChild = 0
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "647 778 96 56"
+    moduleGroupName = "X direction drag"
+    windows  {
+      window _materialeditor {
+        geometry = "848 486 222 180"
+        sizeHint = "222 180"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial
+    ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
+    diffuseColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.200000002980232
+    transparency = 1
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "762 778 96 56"
+    moduleGroupName = "X direction drag"
+    windows  {
+      window _materialeditor {
+        geometry = "848 486 222 180"
+        sizeHint = "222 180"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial1
+    ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
+    diffuseColor = "0.800000011920929 0.0941179990768433 0.0941179990768433"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.200000002980232
+    transparency = 0
+  }
+}
+module SoMIDraggerContainer {
+  internal  {
+    frame = "963 302 168 56"
+    moduleGroupName = "Y direction drag"
+    windows  {
+      window _default {
+        geometry = "636 694 479 169"
+        sizeHint = "479 169"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMIDraggerContainer1
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    translation = "-0.169554397463799 -0.301894962787628 -0.515342056751251"
+    rotation = "0 0 1 0"
+    scaleFactor = "1 1 1"
+    scaleOrientation = "0 0 1 0"
+    center = "0 0 0"
+  }
+}
+module SoMITranslate1Dragger {
+  internal  {
+    frame = "963 417 168 56"
+    moduleGroupName = "Y direction drag"
+    windows  {
+      window _default {
+        geometry = "945 514 300 132"
+        sizeHint = "300 132"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMITranslate1Dragger1
+    interactionProviderID = ""
+    enabled = TRUE
+    cursorShape = MOVE_ALL_CURSOR
+    direction = DIR_Y
+  }
+}
+module SoCube {
+  internal  {
+    frame = "1080 647 88 56"
+    moduleGroupName = "Y direction drag"
+    windows  {
+      window _default {
+        geometry = "896 525 127 103"
+        sizeHint = "127 103"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCube1
+    width = 2
+    height = 0
+    depth = 2
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "999 532 96 56"
+    moduleGroupName = "Y direction drag"
+  }
+  fields  {
+    instanceName = SoGroup1
+  }
+}
+module SoSwitch {
+  internal  {
+    frame = "925 647 136 72"
+    moduleGroupName = "Y direction drag"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "974 709 188 98"
+        sizeHint = "188 98"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoSwitch1
+    whichChild = 0
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "941 778 96 56"
+    moduleGroupName = "Y direction drag"
+    windows  {
+      window _materialeditor {
+        geometry = "848 486 222 180"
+        sizeHint = "222 180"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial2
+    ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
+    diffuseColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.200000002980232
+    transparency = 1
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "1056 778 96 56"
+    moduleGroupName = "Y direction drag"
+    windows  {
+      window _materialeditor {
+        geometry = "848 486 222 180"
+        sizeHint = "222 180"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial3
+    ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
+    diffuseColor = "0 0.800000011920929 0"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.200000002980232
+    transparency = 0
+  }
+}
+module SoMIDraggerContainer {
+  internal  {
+    frame = "1265 302 168 56"
+    moduleGroupName = "Z direction drag"
+    windows  {
+      window _default {
+        geometry = "916 447 479 169"
+        sizeHint = "479 169"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMIDraggerContainer2
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    translation = "-0.169554397463799 -0.301894962787628 -0.515342056751251"
+    rotation = "0 0 1 0"
+    scaleFactor = "1 1 1"
+    scaleOrientation = "0 0 1 0"
+    center = "0 0 0"
+  }
+}
+module SoMITranslate1Dragger {
+  internal  {
+    frame = "1265 417 168 56"
+    moduleGroupName = "Z direction drag"
+    windows  {
+      window _default {
+        geometry = "945 514 300 132"
+        sizeHint = "300 132"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMITranslate1Dragger2
+    interactionProviderID = ""
+    enabled = TRUE
+    cursorShape = MOVE_ALL_CURSOR
+    direction = DIR_Z
+  }
+}
+module SoCube {
+  internal  {
+    frame = "1382 647 88 56"
+    moduleGroupName = "Z direction drag"
+    windows  {
+      window _default {
+        geometry = "896 525 127 103"
+        sizeHint = "127 103"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCube2
+    width = 2
+    height = 2
+    depth = 0
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "1301 532 96 56"
+    moduleGroupName = "Z direction drag"
+  }
+  fields  {
+    instanceName = SoGroup2
+  }
+}
+module SoSwitch {
+  internal  {
+    frame = "1227 647 136 72"
+    moduleGroupName = "Z direction drag"
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "974 709 188 98"
+        sizeHint = "188 98"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoSwitch2
+    whichChild = 0
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "1243 778 96 56"
+    moduleGroupName = "Z direction drag"
+    windows  {
+      window _materialeditor {
+        geometry = "848 486 222 180"
+        sizeHint = "222 180"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial4
+    ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
+    diffuseColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.200000002980232
+    transparency = 1
+  }
+}
+module SoMaterial {
+  internal  {
+    frame = "1358 778 96 56"
+    moduleGroupName = "Z direction drag"
+    windows  {
+      window _materialeditor {
+        geometry = "848 486 222 180"
+        sizeHint = "222 180"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoMaterial5
+    ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
+    diffuseColor = "0.800000011920929 0.800000011920929 0"
+    specularColor = "0 0 0"
+    emissiveColor = "0 0 0"
+    shininess = 0.200000002980232
+    transparency = 0
+  }
+}
+module SyncVector {
+  internal  {
+    frame = "933 -133 96 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "537 245 361 169"
+        sizeHint = "361 169"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SyncVector
+    vector1 = "-0.169554397463799 -0.301894962787628 -0.515342056751251 0"
+    vector2 = "-0.169554397463799 -0.301894962787628 -0.515342056751251 0"
+    epsilon = 9.9999997e-05
+    epsilonVec = "0.001 0.001 0.001 0.001"
+    mode = EpsilonScalar
+  }
+}
+module SoGroup {
+  internal  {
+    frame = "986 97 128 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGroup3
+  }
+}
+connections  {
+  SoExaminerViewer.children = "SoBackground.self SoWEMRenderer.self SoGroup3.self SoCoordinateSystem.self"
+  SoWEMRenderer.inWEM = WEMModify.outWEM
+  SoMIDraggerContainer.inScene = SoMITranslate1Dragger.self
+  SoMIDraggerContainer.translation = SyncVector.vector2
+  SoMITranslate1Dragger.children = SoGroup.self
+  WEMModify.inWEM = WEMInitialize.outWEM
+  WEMModify.translate = SoMIDraggerContainer.translation
+  SoGroup.children = "SoSwitch.self SoCube.self"
+  SoSwitch.whichChild = SoMITranslate1Dragger.highlighted
+  SoSwitch.children = "SoMaterial.self SoMaterial1.self"
+  SoMIDraggerContainer1.inScene = SoMITranslate1Dragger1.self
+  SoMIDraggerContainer1.translation = SoMIDraggerContainer.translation
+  SoMITranslate1Dragger1.children = SoGroup1.self
+  SoGroup1.children = "SoSwitch1.self SoCube1.self"
+  SoSwitch1.whichChild = SoMITranslate1Dragger1.highlighted
+  SoSwitch1.children = "SoMaterial2.self SoMaterial3.self"
+  SoMIDraggerContainer2.inScene = SoMITranslate1Dragger2.self
+  SoMIDraggerContainer2.translation = SoMIDraggerContainer1.translation
+  SoMITranslate1Dragger2.children = SoGroup2.self
+  SoGroup2.children = "SoSwitch2.self SoCube2.self"
+  SoSwitch2.whichChild = SoMITranslate1Dragger2.highlighted
+  SoSwitch2.children = "SoMaterial4.self SoMaterial5.self"
+  SyncVector.vector1 = SoMIDraggerContainer2.translation
+  SoGroup3.children = "SoMIDraggerContainer.self SoMIDraggerContainer1.self SoMIDraggerContainer2.self"
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 48
+        objectName = "X direction drag"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 100
+        objectName = "Y direction drag"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 148
+        objectName = "Z direction drag"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}

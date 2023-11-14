@@ -1,0 +1,568 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "76 290 136 56"
+    moduleGroupName = "Transform Cube Example"
+    windows  {
+      window _viewer {
+        geometry = "564 376 595 510"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = FALSE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "-0.875752568244934 2.86654877662659 3.96076226234436"
+    orientation = "-0.977530241012573 -0.20917509496212 -0.0260849501937628 0.635283172130585"
+    nearDistance = 1.5950668
+    farDistance = 6.6391854
+    focalDistance = 4.4116583
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
+  }
+}
+module SoCube {
+  internal  {
+    frame = "320 520 80 56"
+    moduleGroupName = "Transform Cube Example"
+  }
+  fields  {
+    instanceName = SoCube
+    width = 2
+    height = 2
+    depth = 2
+  }
+}
+module SoBackground {
+  internal  {
+    frame = "-113 520 112 56"
+    moduleGroupName = "Transform Cube Example"
+  }
+  fields  {
+    instanceName = SoBackground
+    rotate = TRUE
+    flip = FALSE
+    on = TRUE
+    depthBuffer = TRUE
+  }
+}
+module SoCoordinateSystem {
+  internal  {
+    frame = "153 405 152 56"
+    moduleGroupName = "Transform Cube Example"
+    windows  {
+      window _default {
+        geometry = "732 452 455 249"
+        sizeHint = "455 249"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoCoordinateSystem
+    strideMode = AUTO
+    userStride = 10
+    endTickMode = ROUND_UP
+    axisColor = "1 1 1"
+    axisAlpha = 1
+    tickColor = "1 1 1"
+    tickAlpha = 1
+    numbersFontColor = "1 1 1"
+    numbersFontAlpha = 1
+    lettersFontColor = "1 1 1"
+    lettersFontAlpha = 1
+    useTextShadow = TRUE
+    textShadowColor = "0 0 0"
+    fontSize = 10
+    lettersFontSizeOffset = 2
+    arrowLengthFactor = 2
+    letterOffsetFactor = 2
+    useVoxelAlignedBoundingBox = FALSE
+    userScale = "2 2 2"
+    userTranslate = "0 0 0"
+    userTransformMode = USER_TRANSFORM_INSTEAD_OF_INPUT
+  }
+}
+module SoTransformerDragger {
+  internal  {
+    frame = "18 520 160 56"
+    moduleGroupName = "Transform Cube Example"
+    windows  {
+      window _default {
+        geometry = "307 607 514 299"
+        sizeHint = "421 299"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoTransformerDragger
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    enable = TRUE
+    translation = "0 0 0"
+    scaleFactor = "0.576209425926208 0.576208591461182 0.576208651065826"
+    rotation = "0.999271094799042 0.0083360280841589 -0.0372526571154594 0.440550982952118"
+    minDiscRotDot = 0.025
+  }
+}
+module SoTransform {
+  internal  {
+    frame = "197 520 104 56"
+    moduleGroupName = "Transform Cube Example"
+    windows  {
+      window _default {
+        geometry = "725 366 479 169"
+        sizeHint = "479 169"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoTransform
+    translation = "0 0 0"
+    rotation = "0.999271094799042 0.0083360280841589 -0.0372526571154594 0.440550982952118"
+    scaleFactor = "0.576209425926208 0.576208591461182 0.576208651065826"
+    scaleOrientation = "0 0 1 0"
+    center = "0 0 0"
+  }
+}
+module SoSeparator {
+  internal  {
+    frame = "-18 405 152 56"
+    moduleGroupName = "Transform Cube Example"
+  }
+  fields  {
+    instanceName = SoSeparator
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+  }
+}
+module WEMInitialize {
+  internal  {
+    frame = "917 645 136 72"
+    moduleGroupName = "Deform WEM "
+    showNetworkPanel = true
+  }
+  fields  {
+    instanceName = WEMInitialize
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    initialPosition = "0 0 0"
+    initialDeformation = "1 1 1"
+    initModel = Icosahedron
+    sphereSubdivisionLevel = 4
+    mirrorFaces = FALSE
+    generateEdges = TRUE
+    triangulate = FALSE
+    triangulationMode = "Center node"
+    generatePrimitiveValueLists = FALSE
+  }
+}
+module SoWEMRenderer {
+  internal  {
+    frame = "817 357 160 72"
+    moduleGroupName = "Deform WEM "
+    showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "712 310 494 533"
+        sizeHint = "494 533"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoWEMRenderer
+    interactionProviderID = ""
+    autoApply = TRUE
+    autoUpdate = TRUE
+    autoClear = TRUE
+    enableCreaseAngle = FALSE
+    creaseAngle = 75
+    useHighlightSelected = FALSE
+    highlightColor = "1 0 0"
+    highlightIntensity = 0.5
+    faceRenderingMode = WEM_FACE_RENDERING_MODE_AUTO
+    allowHits = FALSE
+    performPreHitTest = FALSE
+    cursorShape = CROSS_CURSOR
+    colorMode = WEM_COLOR_LUT_VALUES
+    drawFaces = TRUE
+    faceDiffuseColor = "0.792156994342804 0.792156994342804 0.792156994342804"
+    useFaceAmbientColor = TRUE
+    faceAmbientColor = "0.266667008399963 0.266667008399963 0.266667008399963"
+    useFaceSpecularColor = TRUE
+    faceSpecularColor = "0.0666669979691505 0.0666669979691505 0.0666669979691505"
+    faceAlphaValue = 1
+    faceShininessValue = 1
+    primitiveValueLists = LUT,MyTestPVL
+    selectedPrimitiveValueList = MyTestPVL
+    selectedPrimitiveValueAlphaList = LUT
+    primitiveValueListValid = TRUE
+    primitiveValueListAlphaValid = TRUE
+    overwriteAlphaWithPVL = FALSE
+    wemPatchToRender = -1
+    maxWEMPatchIndex = 0
+    cachePatches = FALSE
+    sendAdjacency = FALSE
+    hitModifierKey = AllModifiersMask
+    selectedTab = 0
+  }
+}
+module SoBackground {
+  internal  {
+    frame = "645 357 120 56"
+    moduleGroupName = "Deform WEM "
+    windows  {
+      window _default {
+        geometry = "889 501 141 150"
+        sizeHint = "141 150"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoBackground1
+    rotate = TRUE
+    flip = FALSE
+    on = TRUE
+    depthBuffer = TRUE
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "817 157 144 56"
+    moduleGroupName = "Deform WEM "
+    windows  {
+      window _viewer {
+        geometry = "759 376 399 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer1
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    enableKeyCommands = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "3.61084389686584 -2.13206934928894 2.20126581192017"
+    orientation = "0.130274295806885 0.821501433849335 -0.555125117301941 1.32366895675659"
+    nearDistance = 2.6404276
+    farDistance = 6.5265231
+    focalDistance = 4.3902411
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    recordRotation = TRUE
+    wheelZoomEnabled = TRUE
+    wheelRotationEnabled = TRUE
+  }
+}
+module WEMBulgeEditor {
+  internal  {
+    frame = "1049 429 128 56"
+    moduleGroupName = "Deform WEM "
+    windows  {
+      window _default {
+        geometry = "762 435 395 283"
+        sizeHint = "395 283"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMBulgeEditor
+    primitiveValueLists = LUT,MyTestPVL
+    selectedPrimitiveValueList = MyTestPVL
+    influenceRadius = 1
+    influenceRadiusChangeFactor = 1
+    useMinMaxInfluenceRadius = FALSE
+    minInfluenceRadius = 0
+    maxInfluenceRadius = 1
+    mouseLeavesWindowWhileBulgingHandling = continueBulging
+  }
+}
+module SoWEMBulgeEditor {
+  internal  {
+    frame = "1033 309 144 56"
+    moduleGroupName = "Deform WEM "
+    windows  {
+      window _default {
+        geometry = "797 497 324 159"
+        sizeHint = "324 159"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoWEMBulgeEditor
+    interactionProviderID = ""
+    useGlobalNormal = FALSE
+    globalNormal = "0 0 1"
+    editingOn = TRUE
+    cursorShapeDrag = CLOSED_HAND_CURSOR
+    cursorShapeDragAll = MOVE_ALL_CURSOR
+    dragMode = DRAG_LOCAL
+    influenceRadiusModifierKey = AltModifier
+    dragModifierKey = NoModifier
+  }
+}
+module WEMGenerateStatistics {
+  internal  {
+    frame = "905 549 160 56"
+    moduleGroupName = "Deform WEM "
+    windows  {
+      window _default {
+        geometry = "800 258 318 637"
+        sizeHint = "318 637"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = WEMGenerateStatistics
+    id = 0
+    autoApply = TRUE
+    updateMode = AutoUpdate
+    overwriteLabelDescription = FALSE
+    label = ""
+    description = ""
+    shouldComputeNormals = TRUE
+    workDirectlyOnInputWEMs = FALSE
+    listenToFinishNotifications = TRUE
+    listenToRepaintNotifications = TRUE
+    listenToSelectionChangedNotifications = TRUE
+    triangulationMode = Strip
+    shouldGenerateNodeCurvature = FALSE
+    shouldGenerateFaceArea = FALSE
+    shouldGenerateEdgeLength = FALSE
+    shouldGenerateNodeValence = FALSE
+    shouldGenerateFaceQuality = FALSE
+    pvlsArePersistent = FALSE
+    shouldGenerateNewNodePVL = TRUE
+    newNodePVLName = MyTestPVL
+    newNodePVLMinValue = 0
+    newNodePVLMaxValue = 1
+    newNodePVLDefaultValue = 0
+    edgeLengthUnits = mm
+    faceAreaUnits = mm2
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "677 517 104 56"
+    moduleGroupName = "Deform WEM "
+    windows  {
+      window _default {
+        geometry = "682 344 554 465"
+        sizeHint = "554 465"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor
+    rangeMin = -1
+    rangeMax = 1
+    viewMin = -1
+    viewMax = 1
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ -1 0 0.278431385755539 1, 0 0.670588254928589 0.670588254928589 0.670588254928589, 1 0.87058824300766 1 0 ]"
+    alphaPoints = "[ -1 1, 0 1, 1 1 ]"
+    alphaFactor = 1
+    newRangeMin = -1
+    newRangeMax = 1
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    marginColor = "0.830999970436096 0.815999984741211 0.783999979496002"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+connections  {
+  SoExaminerViewer.children = "SoSeparator.self SoCoordinateSystem.self"
+  SoTransform.translation = SoTransformerDragger.translation
+  SoTransform.rotation = SoTransformerDragger.rotation
+  SoTransform.scaleFactor = SoTransformerDragger.scaleFactor
+  SoSeparator.children = "SoBackground.self SoTransformerDragger.self SoTransform.self SoCube.self"
+  SoWEMRenderer.inWEM = WEMGenerateStatistics.outWEM
+  SoWEMRenderer.inLUT = SoLUTEditor.outLUT
+  SoExaminerViewer1.children = "SoBackground1.self SoWEMRenderer.self SoWEMBulgeEditor.self"
+  WEMBulgeEditor.inWEM = WEMGenerateStatistics.outWEM
+  SoWEMBulgeEditor.inEditor = WEMBulgeEditor.outEditor
+  WEMGenerateStatistics.inWEM = WEMInitialize.outWEM
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 22
+        objectName = "Transform Cube Example"
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 81
+        objectName = "Deform WEM "
+        parentUniqueId = 0
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}
