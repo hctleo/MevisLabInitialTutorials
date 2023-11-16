@@ -18,7 +18,7 @@ module SoMaterial {
   fields  {
     instanceName = SoMaterial
     ambientColor = "0.200000002980232 0.200000002980232 0.200000002980232"
-    diffuseColor = "0.627451002597809 0.823529422283173 0.490196079015732"
+    diffuseColor = "0.517647087574005 0.282352954149246 0.18823529779911"
     specularColor = "0 0 0"
     emissiveColor = "0 0 0"
     shininess = 0.200000002980232
@@ -86,7 +86,7 @@ module SoExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "-4.12639427185059 -1.21974873542786 -1.40370047092438"
-    orientation = "0.375565558671951 -0.924051463603973 -0.0712712183594704 1.89317691326141"
+    orientation = "0.375565499067307 -0.924051403999329 -0.0712712183594704 1.89317691326141"
     nearDistance = 2.5763161
     farDistance = 6.4797153
     focalDistance = 4.5260668
@@ -151,7 +151,7 @@ module TimeCounter {
     step = 1
     frequency = 0.5
     on = TRUE
-    value = 5
+    value = 3
   }
 }
 module RunPythonScript {
@@ -163,13 +163,13 @@ module RunPythonScript {
       window _default {
         geometry = "771 64 917 1016"
         sizeHint = "701 819"
-        wasOpen = no
+        wasOpen = yes
       }
     }
   }
   fields  {
     instanceName = RunPythonScript
-    in0 = 5
+    in0 = 3
     in1 = ""
     in2 = ""
     in3 = ""
@@ -199,7 +199,7 @@ module RunPythonScript {
     autoApply7 = TRUE
     autoApply8 = TRUE
     autoApply9 = TRUE
-    out0 = "0.6274509803921569 0.8235294117647058 0.49019607843137253"
+    out0 = "0.5176470588235295 0.2823529411764706 0.18823529411764706"
     out1 = ""
     out2 = ""
     out3 = ""
