@@ -1,0 +1,24 @@
+// MDL v1 utf8
+mevislabVersion = 3.7.2.12
+network  {
+  watchlist = ""
+}
+module IsoCSO {
+  internal  {
+    frame = "805 357 80 56"
+    moduleGroupName = ""
+    localMacro = 1
+    windows  {
+      window _default {
+        geometry = "281 220 820 527"
+        sizeHint = "820 527"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = IsoCSO
+  }
+}
+connections = ""
+networkModel = ""

@@ -1,0 +1,20 @@
+// mdl v1 utf8
+//----------------------------------------------------------------------------------
+//! IsoCSOs module definition
+/*!
+// \file    IsoCSOs.def
+// \author  MusterAutor
+// \date    2022-09-27
+*/
+//----------------------------------------------------------------------------------
+
+
+MacroModule IsoCSOs {
+  genre              = ""
+  author             = "MusterAutor"
+  comment            = ""
+  keywords           = ""
+  seeAlso            = ""
+   
+  externalDefinition = "$(LOCAL)/IsoCSOs.script"
+}

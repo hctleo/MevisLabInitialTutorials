@@ -5,32 +5,32 @@ network  {
 }
 module LocalImage {
   internal  {
-    frame = "545 717 128 72"
+    frame = "465 581 128 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "691 483 536 187"
-        sizeHint = "536 187"
+        geometry = "716 558 488 144"
+        sizeHint = "488 144"
         wasOpen = no
       }
     }
   }
   fields  {
     instanceName = LocalImage
-    name = $(DemoDataPath)/Bone.tiff
+    name = $(DemoDataPath)/Thorax1_CT.small.tif
     autoLoad = TRUE
   }
 }
 module CSOManager {
   internal  {
-    frame = "697 613 144 72"
+    frame = "673 493 144 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "573 260 773 633"
-        sizeHint = "773 633"
+        geometry = "614 350 692 561"
+        sizeHint = "692 561"
         wasOpen = no
       }
     }
@@ -102,7 +102,7 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 0
+    numUndos = 6
     numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
@@ -120,17 +120,17 @@ module CSOManager {
     outputApplicationEventsDebug = FALSE
     csoTreeView = ""
     groupTreeView = ""
-    numSelectedCSOs = 0
+    numSelectedCSOs = 1
     numSelectedGroups = 0
     selectedCSOsGroupIds = ""
-    csoTabSelected = FALSE
+    csoTabSelected = TRUE
     groupTabSelected = FALSE
     selectionTabSelected = FALSE
     notificationTabSelected = FALSE
     defaultTabSelected = FALSE
-    csoCommonTabSelected = FALSE
+    csoCommonTabSelected = TRUE
     csoVisualsTabSelected = FALSE
-    groupCommonTabSelected = FALSE
+    groupCommonTabSelected = TRUE
     groupVisualsTabSelected = FALSE
     groupMiscTabSelected = FALSE
     notificationControlTabSelected = FALSE
@@ -144,13 +144,13 @@ module CSOManager {
 }
 module CSOIsoGenerator {
   internal  {
-    frame = "497 309 160 72"
+    frame = "577 365 160 72"
     moduleGroupName = ""
     showNetworkPanel = true
     windows  {
       window _default {
-        geometry = "763 276 393 600"
-        sizeHint = "393 600"
+        geometry = "351 338 361 533"
+        sizeHint = "361 533"
         wasOpen = no
       }
     }
@@ -176,7 +176,7 @@ module CSOIsoGenerator {
     voxelWriteValue = 1024
     allowUndo = FALSE
     sendCSOEvents = FALSE
-    isoValue = 1200
+    isoValue = 600
     interpolate = TRUE
     timePoint = 0
     generateForAllTimepoints = FALSE
@@ -197,11 +197,82 @@ module CSOIsoGenerator {
     startPosition = "0 0 0"
   }
 }
-module SoView2DCSOExtensibleEditor {
+module View2D {
   internal  {
-    frame = "765 253 200 56"
+    frame = "501 117 120 56"
     moduleGroupName = ""
     windows  {
+      window _default {
+        geometry = "492 431 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "1282 155 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = View2D
+    inventorInputOn = TRUE
+    inventorOutputOn = FALSE
+    view2DExtensionsOn = TRUE
+    startSlice = 37
+    numSlices = 1
+    numXSlices = 1
+    sliceStep = 1
+    slab = 1
+    blendMode = BLEND_REPLACE
+    timePoint = 0
+    maxTimePoint = 0
+    filterMode = FILTER_LINEAR
+    standardKeys = TRUE
+    cineMode = CINE_ZT
+    cineDirection = CINE_FORWARD
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineAlwaysReset = TRUE
+    snapToCenter = TRUE
+    zoomMode = VIEW2D_AUTO_ZOOM
+    unzoomOnImageChange = FALSE
+    sliceZoom = 1
+    sliceZoomSynced = 1
+    baseColor = "1 1 1"
+    margin = "2 2"
+    sliceOrigin = "0 0"
+    useShaders = TRUE
+    useManagedInteraction = FALSE
+    lutCenter = 1986.11926269531
+    lutWidth = 3682.80053710938
+    annotationOn = TRUE
+    annotationMode = ANNO_MODE_AUTO
+    annotationSizeMode = ANNO_SHOW_DETAILED
+    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
+    annotationFontSize = ANNO_SIZE_AUTO
+    annoCoords = Voxel
+    annoCTValue = AsIs
+    borderOn = FALSE
+    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
+    valueHighPrecision = TRUE
+    showColorChannelValues = FALSE
+    colorChannelSeparator = " / "
+    maxPrecision = 4
+    enableSlicing = TRUE
+    useRelativeLUTIfNoInputImage = TRUE
+  }
+}
+module SoView2DCSOExtensibleEditor {
+  internal  {
+    frame = "701 245 200 56"
+    moduleGroupName = ""
+    windows  {
+      window _automatic {
+        geometry = "1131 178 500 600"
+        sizeHint = "260 223"
+        wasOpen = no
+      }
       window _default {
         geometry = "743 365 432 422"
         sizeHint = "432 422"
@@ -242,79 +313,18 @@ module SoView2DCSOExtensibleEditor {
     renderLeftOverCSOsWithDefaultRenderer = TRUE
     allowSelectionWithDefaultRenderer = TRUE
     renderCSOsOnImagesDependingOnCreationMode = ON_ALL_IMAGES
-    updateCSOIdUnderMouseCursor = FALSE
+    updateCSOIdUnderMouseCursor = TRUE
     updateImageStatisticsOnFinishInteraction = FALSE
-  }
-}
-module View2D {
-  internal  {
-    frame = "485 125 120 56"
-    moduleGroupName = ""
-    windows  {
-      window _default {
-        geometry = "29 398 400 400"
-        sizeHint = "400 400"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = View2D
-    inventorInputOn = TRUE
-    inventorOutputOn = FALSE
-    view2DExtensionsOn = TRUE
-    startSlice = 0
-    numSlices = 1
-    numXSlices = 1
-    sliceStep = 1
-    slab = 1
-    blendMode = BLEND_REPLACE
-    timePoint = 0
-    maxTimePoint = 0
-    filterMode = FILTER_LINEAR
-    standardKeys = TRUE
-    cineMode = CINE_ZT
-    cineDirection = CINE_FORWARD
-    cineRepeat = CINE_ONCE
-    cineSpeed = 0.1
-    cineAlwaysReset = TRUE
-    snapToCenter = TRUE
-    zoomMode = VIEW2D_AUTO_ZOOM
-    unzoomOnImageChange = FALSE
-    sliceZoom = 1
-    sliceZoomSynced = 1
-    baseColor = "1 1 1"
-    margin = "2 2"
-    sliceOrigin = "0 0"
-    useShaders = TRUE
-    useManagedInteraction = FALSE
-    lutCenter = 2047.5
-    lutWidth = 4095
-    annotationOn = TRUE
-    annotationMode = ANNO_MODE_AUTO
-    annotationSizeMode = ANNO_SHOW_DETAILED
-    annotationCol = "0.899999976158142 0.899999976158142 0.899999976158142"
-    annotationFontSize = ANNO_SIZE_AUTO
-    annoCoords = Voxel
-    annoCTValue = AsIs
-    borderOn = FALSE
-    borderColor = "0.899999976158142 0.899999976158142 0.899999976158142"
-    valueHighPrecision = TRUE
-    showColorChannelValues = FALSE
-    colorChannelSeparator = " / "
-    maxPrecision = 4
-    enableSlicing = TRUE
-    useRelativeLUTIfNoInputImage = TRUE
   }
 }
 module SoCSOVisualizationSettings {
   internal  {
-    frame = "901 485 184 56"
+    frame = "869 357 184 56"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "755 155 693 843"
-        sizeHint = "408 843"
+        geometry = "847 138 372 745"
+        sizeHint = "372 745"
         wasOpen = no
       }
     }
@@ -330,7 +340,7 @@ module SoCSOVisualizationSettings {
     orientationFilterMode = ORIENTATION_MODE_ALL
     parallelThicknessMode = PARALLEL_THICKNESS_MODE_RELATIVE_TO_SLICE
     showParallelThickness = 0.2
-    ghostingDepthInVoxel = 5
+    ghostingDepthInVoxel = 2
     voxelSlabAugment = 0
     shouldRenderShadow = FALSE
     shadowColor = "0 0 0"
@@ -374,16 +384,16 @@ module SoCSOVisualizationSettings {
     seedPointAboveSliceColor = "1 1 1"
     seedPointAboveSliceAlpha = 1
     seedPointAboveSliceLineWidth = 1
-    shouldOverwritePathPointsSettings = TRUE
+    shouldOverwritePathPointsSettings = FALSE
     shouldUseStylePaletteLookUpForPathPoints = FALSE
     stylePaletteLookUpPathPoints = CSOId
     usePathPointsOnSliceLineStyle = TRUE
-    usePathPointsOnSliceLineWidth = TRUE
-    usePathPointsOnSliceColor = TRUE
+    usePathPointsOnSliceLineWidth = FALSE
+    usePathPointsOnSliceColor = FALSE
     usePathPointsOnSliceAlpha = TRUE
-    pathPointsOnSliceLineStyle = PATH_POINTS_STYLE_SHORT_DASHED
-    pathPointsOnSliceLineWidth = 3
-    pathPointsOnSliceColor = "1 0 0"
+    pathPointsOnSliceLineStyle = PATH_POINTS_STYLE_SOLID
+    pathPointsOnSliceLineWidth = 1
+    pathPointsOnSliceColor = "1 1 1"
     pathPointsOnSliceAlpha = 1
     usePathPointsBelowSliceLineStyle = TRUE
     usePathPointsBelowSliceLineWidth = FALSE
@@ -405,7 +415,7 @@ module SoCSOVisualizationSettings {
     selectedPathPointsColorMode = HIGHLIGHT_MODE_RELATIVE
     selectedPathPointsLineWidthMode = HIGHLIGHT_MODE_RELATIVE
     selectedPathPointsBrightenValue = 1.2
-    selectedPathPointsFixedColor = "1 0.333333343267441 0"
+    selectedPathPointsFixedColor = "1 1 0"
     selectedPathPointsAlpha = 1
     selectedPathPointsWidenValue = 1
     selectedPathPointsFixedLineWidth = 2
@@ -438,12 +448,12 @@ module SoCSOVisualizationSettings {
 }
 module SoCSO3DRenderer {
   internal  {
-    frame = "1033 349 144 56"
+    frame = "1081 357 144 56"
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "809 362 300 429"
-        sizeHint = "300 429"
+        geometry = "824 444 273 372"
+        sizeHint = "273 372"
         wasOpen = no
       }
     }
@@ -472,12 +482,17 @@ module SoCSO3DRenderer {
 }
 module SoExaminerViewer {
   internal  {
-    frame = "1013 165 136 56"
+    frame = "1085 237 136 56"
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "841 380 400 400"
+        geometry = "978 299 400 400"
         sizeHint = "400 400"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "710 330 500 600"
+        sizeHint = "260 223"
         wasOpen = no
       }
     }
@@ -509,7 +524,7 @@ module SoExaminerViewer {
     snapCount = 0
     inputDevicesList = ""
     headlight = TRUE
-    decoration = TRUE
+    decoration = FALSE
     popupMenuEnabled = FALSE
     viewing = TRUE
     autoClipping = TRUE
@@ -530,11 +545,11 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "-81.3927688598633 -188.149353027344 -129.944427490234"
-    orientation = "-0.72769033908844 -0.530055999755859 0.43532457947731 3.57321453094482"
-    nearDistance = 90.324509
-    farDistance = 196.49336
-    focalDistance = 296.24692
+    position = "187.802047729492 -720.229187011719 -660.0205078125"
+    orientation = "0.9582239985466 0.242420688271523 0.151786252856255 1.05157244205475"
+    nearDistance = 425.85666
+    farDistance = 974.02289
+    focalDistance = 880.05756
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER
@@ -552,160 +567,14 @@ module SoExaminerViewer {
     wheelRotationEnabled = TRUE
   }
 }
-module View3D {
-  internal  {
-    frame = "681 77 144 56"
-    moduleGroupName = ""
-    windows  {
-      window _default {
-        geometry = "273 276 1047 693"
-        sizeHint = "1047 693"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = View3D
-    autoViewAll = TRUE
-    inventorInputOn = TRUE
-    inventorOutputOn = FALSE
-    lutType = Ramp
-    rendererType = Slicer
-    currentTimePoint = 0
-    staticSamplingRate = 1
-    quality = 1
-    filterVolumeData = FilterLinear
-    lutEditorColorPoints = "[ 0 0 0 0, 4095 1 1 1 ]"
-    lutEditorAlphaPoints = "[ 0 0, 4095 1 ]"
-    lutEditorRelativeLut = FALSE
-    lutEditorColorInterpolation = InterpolateRGB
-    lutEditorAlphaFactor = 1
-    orientationProjectionType = PERSPECTIVE
-    orientationLocation = LOWER_RIGHT
-    orientationOn = TRUE
-    orientationModel = CUBE
-    greyCenter = 0.614999890327454
-    greyWidth = 0.589999914169312
-    alphaFactor = 1
-    colorFactor = "1 1 1"
-    camType = TRUE
-    camPosition = "136.560836791992 -45.7826080322266 100.223785400391"
-    camOrientation = "0.708661437034607 0.309894621372223 0.633848786354065 1.46691060066223"
-    initialCameraOrientation = CAMERA_KEEP_AS_IS
-    camFar = 202.66057
-    camNear = 91.644554
-    camFocal = 147.0972
-    camHeight = 0.78539801
-    decoration = FALSE
-    annotations = TRUE
-    background = TRUE
-    mode = VolumeRendering
-    interactiveQuality = Medium
-  }
-  internalFields  {
-    renderer.gradientQuality = GradientQualityAutomatic
-    renderer.enhancementAlphaMix = 0.25
-    renderer.boundaryEnhancement = FALSE
-    renderer.boundaryEnhancementFactor = 1
-    renderer.boundaryEnhancementExponent = 1
-    renderer.boundaryEnhancementGradientBias = 0
-    renderer.silhouetteEnhancement = FALSE
-    renderer.silhouetteEnhancementExponent = 1
-    renderer.silhouetteEnhancementFactor = 1
-    renderer.toneShading = FALSE
-    renderer.toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
-    renderer.toneShadingColdColor = "0 0 0.400000005960464"
-    renderer.toneShadingWarmDiffuse = 0.60000002
-    renderer.toneShadingColdDiffuse = 0.2
-    renderer.toneShadingAngle = 45
-    renderer.materialAmbient = 0.60000002
-    renderer.materialDiffuse = 1
-    renderer.materialSpecular = 1
-    renderer.materialSpecularity = 32
-    renderer.light1Enabled = TRUE
-    renderer.light1DiffuseIntensity = 1
-    renderer.light1SpecularIntensity = 1
-    renderer.light1Color = "1 1 1"
-    renderer.light1PolarPhi = 45
-    renderer.light1PolarRho = 0
-    renderer.light2Enabled = FALSE
-    renderer.light2DiffuseIntensity = 1
-    renderer.light2SpecularIntensity = 1
-    renderer.light2Color = "1 1 1"
-    renderer.light2PolarPhi = 0
-    renderer.light2PolarRho = 0
-    renderer.light3Enabled = FALSE
-    renderer.light3DiffuseIntensity = 1
-    renderer.light3SpecularIntensity = 1
-    renderer.light3Color = "1 1 1"
-    renderer.light3PolarPhi = -45
-    renderer.light3PolarRho = 0
-    renderer.sizeOutputX = 64
-    renderer.sizeOutputY = 64
-    renderer.sizeOutputZ = 64
-    renderer.subVolumeStartX = 0
-    renderer.subVolumeStartY = 0
-    renderer.subVolumeStartZ = 0
-    renderer.subVolumeEndX = 64
-    renderer.subVolumeEndY = 64
-    renderer.subVolumeEndZ = 64
-    clip.hideGeometry = FALSE
-    clip.on = FALSE
-    clip.left = FALSE
-    clip.right = FALSE
-    clip.top = FALSE
-    clip.bottom = FALSE
-    clip.rear = FALSE
-    clip.front = FALSE
-    clip.translation0 = "1 0 0"
-    clip.translation1 = "-1 0 0"
-    clip.translation2 = "0 1 0"
-    clip.translation3 = "0 -1 0"
-    clip.translation4 = "0 0 1"
-    clip.translation5 = "0 0 -1"
-    clip.rotation0 = "0 0 0.999999940395355 1.57079994678497"
-    clip.rotation1 = "0 0 -0.999999940395355 1.57079994678497"
-    clip.rotation2 = "0 0 -1 3.1415901184082"
-    clip.rotation3 = "0 0 1 0"
-    clip.rotation4 = "-0.999999940395355 0 0 1.57079994678497"
-    clip.rotation5 = "0.999999940395355 0 0 1.57079994678497"
-  }
-}
-module VoxelizeCSO {
-  internal  {
-    frame = "693 365 136 56"
-    moduleGroupName = ""
-    showNetworkPanel = true
-    windows  {
-      window _default {
-        geometry = "797 425 325 303"
-        sizeHint = "325 303"
-        wasOpen = no
-      }
-    }
-  }
-  fields  {
-    instanceName = VoxelizeCSO
-    mode = Surface
-    distanceMode = VoxelDistance
-    surface = TRUE
-    surfaceThickness = 1
-    fillInside = TRUE
-    antiAliasing = TRUE
-    bandwidth = 3
-  }
-}
 connections  {
   CSOIsoGenerator.input0 = LocalImage.outImage
   CSOIsoGenerator.inCSOList = CSOManager.outCSOList
-  SoView2DCSOExtensibleEditor.inCSOList = CSOManager.outCSOList
-  SoView2DCSOExtensibleEditor.inVisualizationSettings = SoCSOVisualizationSettings.outVisualizationSettings
   View2D.inImage = LocalImage.outImage
   View2D.inInvPreLUT = SoView2DCSOExtensibleEditor.self
+  SoView2DCSOExtensibleEditor.inCSOList = CSOManager.outCSOList
+  SoView2DCSOExtensibleEditor.inVisualizationSettings = SoCSOVisualizationSettings.outVisualizationSettings
   SoCSO3DRenderer.inCSOList = CSOManager.outCSOList
   SoExaminerViewer.children = SoCSO3DRenderer.self
-  View3D.inImage = VoxelizeCSO.output0
-  VoxelizeCSO.input0 = LocalImage.outImage
-  VoxelizeCSO.inCSO = CSOManager.outCSOList
 }
 networkModel = ""

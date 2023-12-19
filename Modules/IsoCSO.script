@@ -1,0 +1,59 @@
+Interface {
+  Inputs {}
+  Outputs {}
+  Parameters {
+    Field IsoGenerator {
+      internalName = CSOIsoGenerator.apply
+    }
+    Field CSOUnderMouse {
+      internalName = SoView2DCSOExtensibleEditor.csoIdUnderMouseCursor
+    }
+    Field NumberCSOs {
+      internalName = CSOManager.numCSOs
+    }
+  }
+}
+
+Commands {
+  source = $(LOCAL)/IsoCSOs.py
+  FieldListener SoView2DCSOExtensibleEditor.csoIdUnderMouseCursor {
+    command = colorizeCSO
+  }
+}
+
+Window {
+  windowActivatedCommand = enableFunctionalities
+  TabView {
+    TabViewItem Main {
+      Vertical {
+        Horizontal {
+          Field LocalImage.name {}
+          Button {
+            title   = "Browse..."
+            command = fileDialog
+          }
+          Button IsoGenerator {
+            title = "Iso Generator"
+          }
+        }
+        Horizontal {
+          Viewer View2D.self {
+            type = SoRenderArea
+            pw   = 400
+            ph   = 400
+          }
+          Viewer SoExaminerViewer.self {
+            type = SoExaminerViewer
+            pw   = 400
+            ph   = 400
+          }
+        }
+      }
+    }
+        
+    TabViewItem Settings {
+      Field CSOIsoGenerator.isoValue {}
+      Field SoCSOVisualizationSettings.ghostingDepthInVoxel {}
+    }
+  }
+}

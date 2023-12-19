@@ -64,9 +64,9 @@ module SoExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "-0.875752568244934 2.86654877662659 3.96076226234436"
-    orientation = "-0.977530241012573 -0.20917509496212 -0.0260849501937628 0.635283172130585"
-    nearDistance = 1.5950668
-    farDistance = 6.6391854
+    orientation = "-0.977530241012573 -0.209175080060959 -0.0260849483311176 0.635283172130585"
+    nearDistance = 1.6111988
+    farDistance = 6.4278655
     focalDistance = 4.4116583
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
@@ -167,8 +167,8 @@ module SoTransformerDragger {
     pickCulling = AUTO
     enable = TRUE
     translation = "0 0 0"
-    scaleFactor = "0.576209425926208 0.576208591461182 0.576208651065826"
-    rotation = "0.999271094799042 0.0083360280841589 -0.0372526571154594 0.440550982952118"
+    scaleFactor = "0.470739662647247 0.470738261938095 0.470738977193832"
+    rotation = "0.999848067760468 -0.00102162244729698 -0.0174006558954716 0.997942745685577"
     minDiscRotDot = 0.025
   }
 }
@@ -187,8 +187,8 @@ module SoTransform {
   fields  {
     instanceName = SoTransform
     translation = "0 0 0"
-    rotation = "0.999271094799042 0.0083360280841589 -0.0372526571154594 0.440550982952118"
-    scaleFactor = "0.576209425926208 0.576208591461182 0.576208651065826"
+    rotation = "0.999848067760468 -0.00102162244729698 -0.0174006558954716 0.997942745685577"
+    scaleFactor = "0.470739662647247 0.470738261938095 0.470738977193832"
     scaleOrientation = "0 0 1 0"
     center = "0 0 0"
   }
@@ -211,6 +211,13 @@ module WEMInitialize {
     frame = "917 645 136 72"
     moduleGroupName = "Deform WEM "
     showNetworkPanel = true
+    windows  {
+      window _default {
+        geometry = "808 323 354 432"
+        sizeHint = "302 432"
+        wasOpen = no
+      }
+    }
   }
   fields  {
     instanceName = WEMInitialize
@@ -344,7 +351,7 @@ module SoExaminerViewer {
     headlight = TRUE
     decoration = TRUE
     popupMenuEnabled = FALSE
-    viewing = TRUE
+    viewing = FALSE
     autoClipping = TRUE
     drawStyle = VIEW_AS_IS
     interactiveDrawStyle = VIEW_LOW_COMPLEXITY
@@ -364,9 +371,9 @@ module SoExaminerViewer {
     stereoOffset = 3
     height = 0.78539819
     position = "3.61084389686584 -2.13206934928894 2.20126581192017"
-    orientation = "0.130274295806885 0.821501433849335 -0.555125117301941 1.32366895675659"
-    nearDistance = 2.6404276
-    farDistance = 6.5265231
+    orientation = "0.130274295806885 0.821501493453979 -0.555125117301941 1.32366895675659"
+    nearDistance = 3.1424899
+    farDistance = 6.268786
     focalDistance = 4.3902411
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
