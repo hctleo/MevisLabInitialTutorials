@@ -36,3 +36,8 @@ def fileDialog():
     if filename:
         ctx.field("LocalImage.name").value = ctx.unexpandFilename(filename)
       
+#def resetCSO():
+#  ctx.field("CSOManager.removeAllCSOsAndGroups"). = True
+
+  
+  

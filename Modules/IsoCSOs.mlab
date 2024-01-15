@@ -10,7 +10,7 @@ module IsoCSO {
     localMacro = 1
     windows  {
       window _default {
-        geometry = "281 220 820 527"
+        geometry = "175 209 820 527"
         sizeHint = "820 527"
         wasOpen = no
       }

@@ -18,7 +18,7 @@ module LocalImage {
   }
   fields  {
     instanceName = LocalImage
-    name = $(DemoDataPath)/Thorax1_CT.small.tif
+    name = $(DemoDataPath)/Bone.tiff
     autoLoad = TRUE
   }
 }
@@ -102,7 +102,7 @@ module CSOManager {
     listSingleRemoveEmptyGroupHandling = RemoveAlways
     listDefaultRemoveEmptyGroupHandling = RemoveAlways
     enableUndoRedo = TRUE
-    numUndos = 6
+    numUndos = 16
     numRedos = 0
     undoStackLimit = 16
     useSelectionCSONotification = FALSE
@@ -176,7 +176,7 @@ module CSOIsoGenerator {
     voxelWriteValue = 1024
     allowUndo = FALSE
     sendCSOEvents = FALSE
-    isoValue = 600
+    isoValue = 1200
     interpolate = TRUE
     timePoint = 0
     generateForAllTimepoints = FALSE
@@ -219,7 +219,7 @@ module View2D {
     inventorInputOn = TRUE
     inventorOutputOn = FALSE
     view2DExtensionsOn = TRUE
-    startSlice = 37
+    startSlice = 41
     numSlices = 1
     numXSlices = 1
     sliceStep = 1
@@ -244,8 +244,8 @@ module View2D {
     sliceOrigin = "0 0"
     useShaders = TRUE
     useManagedInteraction = FALSE
-    lutCenter = 1986.11926269531
-    lutWidth = 3682.80053710938
+    lutCenter = 1441.13842773438
+    lutWidth = 2177
     annotationOn = TRUE
     annotationMode = ANNO_MODE_AUTO
     annotationSizeMode = ANNO_SHOW_DETAILED
@@ -452,8 +452,8 @@ module SoCSO3DRenderer {
     moduleGroupName = ""
     windows  {
       window _default {
-        geometry = "824 444 273 372"
-        sizeHint = "273 372"
+        geometry = "503 382 300 429"
+        sizeHint = "300 429"
         wasOpen = no
       }
     }
@@ -486,7 +486,7 @@ module SoExaminerViewer {
     moduleGroupName = ""
     windows  {
       window _viewer {
-        geometry = "978 299 400 400"
+        geometry = "947 318 400 400"
         sizeHint = "400 400"
         wasOpen = no
       }
@@ -545,11 +545,11 @@ module SoExaminerViewer {
     stereoViewing = FALSE
     stereoOffset = 3
     height = 0.78539819
-    position = "187.802047729492 -720.229187011719 -660.0205078125"
-    orientation = "0.9582239985466 0.242420688271523 0.151786252856255 1.05157244205475"
-    nearDistance = 425.85666
-    farDistance = 974.02289
-    focalDistance = 880.05756
+    position = "139.477554321289 -86.4867858886719 93.3777923583984"
+    orientation = "0.824183762073517 0.0794293954968452 0.56072461605072 1.61633682250977"
+    nearDistance = 118.72967
+    farDistance = 221.87714
+    focalDistance = 612.19836
     forceRedrawOnInteraction = FALSE
     button1events = TO_VIEWER
     button2events = TO_VIEWER

@@ -35,6 +35,10 @@ Window {
           Button IsoGenerator {
             title = "Iso Generator"
           }
+          //Button CSOReset {
+            //title = "Reset"
+           // command = resetCSO
+          //}
         }
         Horizontal {
           Viewer View2D.self {
